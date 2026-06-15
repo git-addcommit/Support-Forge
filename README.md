@@ -1,9 +1,9 @@
-cipher-fellows UI — ready to use
+ UI — ready to use
 
 This folder contains the `cfui` application, including a Gradio web app and a desktop UI.
 
 Setup:
-  1. cd C:\cf\cfui
+  1. cd PATHTOYOURFOLDER 
   2. python -m venv .venv
   3. .\.venv\Scripts\Activate.ps1
   4. pip install -r requirements.txt
