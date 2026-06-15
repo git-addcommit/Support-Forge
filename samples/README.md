@@ -1,32 +1,25 @@
-# Sample Files for File Reader Tool
+cipher-fellows UI — ready to use
 
-This directory contains sample files that the **File Reader tool** can safely access.
+This folder contains the `cfui` application, including a Gradio web app and a desktop UI.
 
-## Files
+Setup:
+  1. cd C:\cf\cfui
+  2. python -m venv .venv
+  3. .\.venv\Scripts\Activate.ps1
+  4. pip install -r requirements.txt
+  5. copy .env.example .env
+  6. edit .env with any API keys you want to use
 
-- **README.md** (this file)
-- **example.py** — Simple Python code sample
-- **sample_data.json** — Example JSON data structure
+Run:
+  python app.py
+  python desktop_app.py
+  python qt_app.py
 
-## Adding More Samples
+What is included:
+  - Web UI with chat, research guide, tools, SpecLab, and SentinelBench
+  - Desktop UI alternative
+  - Safe runtime tools and session metrics
+  - Model registry in models.json
 
-To add a new sample file:
-
-```bash
-echo "Your content here" > sample_name.txt
-```
-
-The file reader will:
-1. List all files in this directory
-2. Read any file < 1 MB
-3. Display content in a code block
-
-## Security Note
-
-The File Reader tool is **sandboxed** to this directory only. It cannot:
-- Read files outside `samples/`
-- Follow symlinks
-- Execute files
-- Access system directories
-
-This is intentional and tested.
+Notes:
+  - `cipher-fellows/` is a separate research project.
