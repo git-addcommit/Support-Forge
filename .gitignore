@@ -1,0 +1,16 @@
+﻿venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.zip
+*.log
+*.json
+*.db
+*.sqlite
+*.sqlite3
+.DS_Store
+.idea/
+.vscode/
+dist/
+build/
