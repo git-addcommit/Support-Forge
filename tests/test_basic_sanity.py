@@ -24,12 +24,12 @@ class TestModuleImports:
         assert hasattr(analyzer, 'generate_portfolio_report')
 
     def test_orchestrator_import(self):
-        from research_main.orchestrator import ResearchOrchestrator
+        from compare.orchestrator import ResearchOrchestrator
         orch = ResearchOrchestrator()
         assert hasattr(orch, 'run_all_projects')
 
     def test_comparator_import(self):
-        from research_main.interactive_compare.comparator import InteractiveComparator
+        from compare.interactive_compare.comparator import InteractiveComparator
         comp = InteractiveComparator()
         assert hasattr(comp, 'generate_comparison_dashboard_data')
 
